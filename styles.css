@@ -1,0 +1,304 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	color: #00000095;
+}
+
+header {
+	height: 680px;
+}
+
+nav {
+	height: 80px;
+	background-color: #56a2ff;
+	color: #fff;
+}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav ul li {
+		height: 20px;
+		margin: 0;
+		padding: 30px 20px;
+		
+	}
+
+	nav ul li:hover {
+		background-color: #2d5c96;
+		
+	}
+
+	.fa-bars, .fa-times {
+		display: none;
+		font-size: 40px;
+		padding: 20px;
+		cursor: pointer;
+	}
+
+	.container {
+		width: 1024px;
+		margin: 0 auto;
+	}
+
+	.main-pic {
+		background-image: url('img/laptop2.jpg');
+		background-size: cover;
+		height: 600px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		color: #fff;
+		padding: 0 20px;
+	}
+
+	.main-pic h1 {
+		font-size: 55px;
+	}
+
+	.main-pic h1 span {
+		background: linear-gradient(45deg, #963FAA 33%, #0D61BC 66%, #ff9400);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: #963FAA;
+	}
+
+	.main-btn {
+		height: 60px;
+		width: 160px;
+		color: #fff;
+		border: 1px solid #999999;
+		border-radius: 3px;
+		background-color: #99999900;
+		margin-top: 35px;
+		cursor: pointer;
+	}
+
+	.main-btn:hover {
+		background-color: #99999950;
+	}
+
+		.services-title {
+			padding: 0 150px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.services-title h2 {
+			font-size: 30px;
+		}
+
+		.subtitle {
+			text-align: center;
+		}
+
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 10px 0;
+		}
+
+		.service-item {
+			width: 270px;
+			margin: 15px;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow:  0 0 10px #00000020;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.service-item:hover {
+			background-color: #00000005;
+		}
+
+		.fa {
+			color: #fff;
+			font-size: 30px;
+		}
+
+		.service-symbol {
+			background-color: #56a2ff;
+			border-radius: 5px;
+			width: 90px;
+			height: 90px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.service-title {
+			padding: 10px 0;
+			font-size: 20px;
+		}
+
+		.service-text {
+			text-align: center;
+		}
+
+footer {
+	height: 425px;
+	background-color: #707070;
+	color: #fff;
+}
+
+	 footer .container {
+	 	display: flex;
+
+	 }
+
+	.col {
+		width: 50%;
+		padding-top: 20px;
+	}
+
+	.footer-text {
+		line-height: 2;
+		font-size: 14px;
+	}
+
+	.progress-bar {
+		padding: 10px;
+		margin: 10px;
+	}
+
+	.bar-body {
+		height: 20px;
+		width: 455px;
+		background-color: #fff;
+		margin-top: 5px;
+	}
+
+	.bar-fill {
+		background-color: #56a2ff;
+		height: 17px;
+		text-align: right;
+		padding-right: 10px;
+		padding-top: 3px;
+		font-size: 12px;
+	}
+
+	.bar1 .bar-fill {
+		width: calc(455px * 0.95);
+	}
+
+	.bar2 .bar-fill {
+		width: calc(455px * 0.75);
+	}
+
+	.bar3 .bar-fill {
+		width: calc(455px * 0.6);
+	}
+
+	.bar4 .bar-fill {
+		width: calc(455px * 0.85);
+	}
+
+@media (max-width: 1100px) {
+	header {
+		height: 500px;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	.fa-bars {
+		display: block;
+	}
+
+	.container {
+		width: 640px;
+	}
+
+	.main-pic {
+		height: 420px;
+	}
+
+
+	.main-pic h1 {
+		font-size: 45px;
+		text-align: center;
+	}
+
+	.main-pic div {
+		text-align: center;
+	}
+
+	.services-title {
+			padding: 0 50px;
+		}
+
+	.service-item {
+		width: 250px;
+	}
+
+	footer {
+		height: 700px;
+	}
+
+	footer .container {
+		flex-direction: column;
+	}
+
+	.col {
+		width: 100%;
+	}
+
+	footer h2, .footer-text {
+		padding: 0 15px;
+		margin-left: 15px;
+	}
+}
+
+@media (max-width: 680px) {
+	header {
+		height: 500px;
+	}
+
+	.container {
+		width: 380px;
+	}
+
+	.main-pic h1 {
+		font-size: 35px;
+	}
+
+	.services {
+		justify-content: center;
+	}
+
+	footer {
+		height: 850px;
+	}
+
+	.bar-body {
+		width: 345px;
+	}
+
+	.bar1 .bar-fill {
+		width: calc(345px * 0.95);
+	}
+
+	.bar2 .bar-fill {
+		width: calc(345px * 0.75);
+	}
+
+	.bar3 .bar-fill {
+		width: calc(345px * 0.6);
+	}
+
+	.bar4 .bar-fill {
+		width: calc(345px * 0.85);
+	}
+
+}
